@@ -1,0 +1,7 @@
+1.We can get ListIterartor cursor by listItreator()
+	ListIterator itr=li.listItertor();
+2.ListIterrator cursor can be used  only with List implemented Class 
+	i.e:-ArrayList,LinkedList,Vector,Stack.
+3.ListIterator methods are hasNext(),next(),hasPrevious(),previous(),remove(),set().
+4.By using ListIterator cursor we can access retrieve forward and backward direction.
+5.By using ListIterator curssor we can  read remove ,replace,add the element.

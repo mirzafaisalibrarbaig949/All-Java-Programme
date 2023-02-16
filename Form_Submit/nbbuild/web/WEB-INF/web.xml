@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <display-name>Form_Submit</display-name>
+    <servlet-mapping>
+        <servlet-name>S1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>S2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Success</servlet-name>
+        <servlet-class>com.servlets.SuccessServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.servlets.Register</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>S1</servlet-name>
+        <servlet-class>com.attrRequestDispatcher.S1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>S2</servlet-name>
+        <servlet-class>com.attrRequestDispatcher.S2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Success</servlet-name>
+        <url-pattern>/Success</url-pattern>
+    </servlet-mapping>
+</web-app>

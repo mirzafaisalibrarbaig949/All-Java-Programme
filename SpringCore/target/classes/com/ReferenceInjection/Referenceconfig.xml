@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+		<bean class="com.ReferenceInjection.B" name="bref">
+			<property name="y" value="458"/>
+		</bean>
+		
+		<bean class="com.ReferenceInjection.A" name="aref">
+			<property name="x" value="45568"/>
+			<property name="obj" >
+				<ref bean="bref"/>
+			</property>
+		</bean>
+		
+		
+		<bean class="com.ReferenceInjection.B" name="bref1" p:y="10" />
+			
+		<bean class="com.ReferenceInjection.A" name="aref1" p:x="20" p:obj-ref="bref1"/>
+
+
+</beans>

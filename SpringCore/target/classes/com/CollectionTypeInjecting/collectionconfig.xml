@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+		<bean class="com.CollectionTypeInjecting.Employee" name="emp1">
+		
+		<property name="name" value="Mirza"/>
+		<property name="phones" >
+			<list>
+					<value>75404321534</value>
+					<value>9776331132</value>
+			</list>
+		</property>
+		
+		<property name="address">
+			<set>
+				<value>Odisha</value>
+				<value>Banglore</value>
+			</set>
+		</property>
+		
+		<property name="courses">
+				<map>
+					<entry key="Java" value="2months"  />
+					<entry key="Python" value="1months"  />
+				</map>
+		</property>
+		
+		<property name="props">
+				<props>
+						<prop key="name">Mirza</prop>
+						<prop key="Country">India</prop>
+				</props>
+		
+		</property>
+		</bean>
+
+
+</beans>

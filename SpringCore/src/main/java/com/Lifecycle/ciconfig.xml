@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:c="http://www.springframework.org/schema/c"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+		
+		<!--  To enable all anotation in programme-->
+		<context:annotation-config/>
+		<bean class="com.Lifecycle.Biscuit"  init-method="init" destroy-method="destroy" name="item1"  p:price="15"/>
+		
+		<bean class="com.Lifecycle.Pepsi"  name="item2"  p:price="30"/>
+		
+		<bean class="com.Lifecycle.Petis"  name="item3"  p:price="40"/>
+
+
+</beans>

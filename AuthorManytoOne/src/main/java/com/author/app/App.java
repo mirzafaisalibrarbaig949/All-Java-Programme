@@ -27,6 +27,7 @@ public class App {
 		books.add(book1);
 		books.add(book2);
 		books.add(book3);
+		author.setBooks(books);
 		
 		AssociationRepository repository = new AssociationRepository();
 		repository.savePersonDetails(author);

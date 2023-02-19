@@ -22,7 +22,7 @@ public class Book {
     private String title;
 
     @ManyToOne
-    @JoinColumn(name = "author_id")
+//    @JoinColumn(name = "author_id")
     private Author author;
 
 	public Long getId() {

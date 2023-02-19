@@ -1,0 +1,19 @@
+package com.product.util;
+
+import java.util.Properties;
+
+public class PropertiesUtil {
+	
+
+		public static Properties getConnectionProperties(){
+			Properties properties = new Properties(); //used to set value in (key value) pair.
+			properties.setProperty("connection.driver_class", "com.mysql.cj.jdbc.Driver"); //
+			properties.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/rolex1");
+			properties.setProperty("hibernate.connection.username", "root");
+			properties.setProperty("hibernate.connection.password", "tiger");
+			properties.setProperty("hibernate.show_sql", "true");
+			properties.setProperty("hibernate.hbm2ddl.auto", "update");
+			return properties;
+		}
+	}
+
